@@ -1,6 +1,6 @@
 Name     : busybox
 Version  : 1.26.2
-Release  : 2
+Release  : 3
 URL      : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source0  : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source1  : config
@@ -33,6 +33,7 @@ mv %{buildroot}/usr/share/busybox/sbin/route %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/sbin/udhcpc %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/usr/bin/[ %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/usr/bin/readlink %{buildroot}/usr/share/busybox/bin
+mv %{buildroot}/usr/share/busybox/usr/bin/setsid %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/usr/bin/unit %{buildroot}/usr/share/busybox/bin
 
 %files
@@ -47,6 +48,7 @@ mv %{buildroot}/usr/share/busybox/usr/bin/unit %{buildroot}/usr/share/busybox/bi
 /usr/share/busybox/bin/mv
 /usr/share/busybox/bin/route
 /usr/share/busybox/bin/readlink
+/usr/share/busybox/bin/setsid
 /usr/share/busybox/bin/sh
 /usr/share/busybox/bin/udhcpc
 /usr/share/busybox/bin/unit
