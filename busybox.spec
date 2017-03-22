@@ -1,6 +1,6 @@
 Name     : busybox
 Version  : 1.26.2
-Release  : 1
+Release  : 2
 URL      : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source0  : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source1  : config
@@ -29,8 +29,10 @@ rm -rf %{buildroot}
 %make_install CONFIG_PREFIX=%{buildroot}/usr/share/busybox
 mv %{buildroot}/usr/share/busybox/sbin/ifconfig %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/sbin/modprobe %{buildroot}/usr/share/busybox/bin
+mv %{buildroot}/usr/share/busybox/sbin/route %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/sbin/udhcpc %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/usr/bin/[ %{buildroot}/usr/share/busybox/bin
+mv %{buildroot}/usr/share/busybox/usr/bin/readlink %{buildroot}/usr/share/busybox/bin
 mv %{buildroot}/usr/share/busybox/usr/bin/unit %{buildroot}/usr/share/busybox/bin
 
 %files
@@ -42,6 +44,9 @@ mv %{buildroot}/usr/share/busybox/usr/bin/unit %{buildroot}/usr/share/busybox/bi
 /usr/share/busybox/bin/mkdir
 /usr/share/busybox/bin/modprobe
 /usr/share/busybox/bin/mount
+/usr/share/busybox/bin/mv
+/usr/share/busybox/bin/route
+/usr/share/busybox/bin/readlink
 /usr/share/busybox/bin/sh
 /usr/share/busybox/bin/udhcpc
 /usr/share/busybox/bin/unit

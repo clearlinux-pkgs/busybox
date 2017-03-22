@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.26.2
-# Fri Mar 17 23:57:23 2017
+# Wed Mar 22 00:56:38 2017
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -253,7 +253,7 @@ CONFIG_MKDIR=y
 # CONFIG_FEATURE_MKDIR_LONG_OPTIONS is not set
 # CONFIG_MKFIFO is not set
 # CONFIG_MKNOD is not set
-# CONFIG_MV is not set
+CONFIG_MV=y
 # CONFIG_FEATURE_MV_LONG_OPTIONS is not set
 # CONFIG_NICE is not set
 # CONFIG_NOHUP is not set
@@ -261,7 +261,7 @@ CONFIG_MKDIR=y
 # CONFIG_PRINTENV is not set
 # CONFIG_PRINTF is not set
 # CONFIG_PWD is not set
-# CONFIG_READLINK is not set
+CONFIG_READLINK=y
 # CONFIG_FEATURE_READLINK_FOLLOW is not set
 # CONFIG_REALPATH is not set
 # CONFIG_RM is not set
@@ -854,7 +854,7 @@ CONFIG_FEATURE_IP_ROUTE_DIR=""
 # CONFIG_PING6 is not set
 # CONFIG_FEATURE_FANCY_PING is not set
 # CONFIG_PSCAN is not set
-# CONFIG_ROUTE is not set
+CONFIG_ROUTE=y
 # CONFIG_SLATTACH is not set
 # CONFIG_TCPSVD is not set
 # CONFIG_UDPSVD is not set
