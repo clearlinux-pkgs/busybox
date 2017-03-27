@@ -1,6 +1,6 @@
 Name     : busybox
 Version  : 1.26.2
-Release  : 3
+Release  : 4
 URL      : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source0  : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source1  : config
@@ -42,6 +42,7 @@ mv %{buildroot}/usr/share/busybox/usr/bin/unit %{buildroot}/usr/share/busybox/bi
 /usr/share/busybox/bin/ash
 /usr/share/busybox/bin/busybox
 /usr/share/busybox/bin/ifconfig
+/usr/share/busybox/bin/ls
 /usr/share/busybox/bin/mkdir
 /usr/share/busybox/bin/modprobe
 /usr/share/busybox/bin/mount
