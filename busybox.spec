@@ -1,6 +1,6 @@
 Name     : busybox
 Version  : 1.26.2
-Release  : 6
+Release  : 7
 URL      : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source0  : https://busybox.net/downloads/busybox-1.26.2.tar.bz2
 Source1  : config
